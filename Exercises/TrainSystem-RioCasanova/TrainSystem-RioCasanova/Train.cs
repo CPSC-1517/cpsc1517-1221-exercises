@@ -13,12 +13,25 @@ namespace TrainSystem_RioCasanova.Data
         private int _GrossWeight;
         private int _MaxGrossWeight;
         private int _TotalCars;
+        List<RailCar> cars = new List<RailCar>();
 
 
         // PROPERTIES
-        public Engine Specs { get; private set; }
-        public List<RailCar> RailCars { get; private set; }
-        List<RailCar> cars = new List<RailCar>();
+        public Engine Engine { get; private set; }
+        public List<RailCar> RailCars
+        {
+            get
+            {
+                return cars;
+            }
+            private set
+            {
+                if (true == Utilities.IsEmptyList(cars))
+                {
+                    cars = new List<RailCar>();
+                }
+            }
+        }
 
         // CALCULATED PROPERTIES
         public int TotalCars
@@ -44,7 +57,7 @@ namespace TrainSystem_RioCasanova.Data
         {
             get 
             {
-                int horsepower = Specs.Horsepower;
+                int horsepower = Engine.Horsepower;
                 _MaxGrossWeight = Utilities.MaxGrossWeight(horsepower);
                 return _MaxGrossWeight;
             }
@@ -54,7 +67,7 @@ namespace TrainSystem_RioCasanova.Data
         // CONSTRUCTORS
         public Train(Engine engine)
         {
-            _GrossWeight =+ engine.Weight;
+            Engine = engine;
         }
         public Train()
         {

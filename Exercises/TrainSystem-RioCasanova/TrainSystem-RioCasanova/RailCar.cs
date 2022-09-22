@@ -167,11 +167,11 @@ namespace TrainSystem_RioCasanova
         public RailCar(string serialnumber, int lightweight, int capacity, 
                         int loadlimit, bool inservice, RailCarType type)
         {
-            _SerialNumber = serialnumber;
-            _LightWeight = lightweight;
-            _Capacity = capacity;
-            _LoadLimit = loadlimit;
-            _InService = inservice;
+            SerialNumber = serialnumber;
+            LightWeight = lightweight;
+            Capacity = capacity;
+            LoadLimit = loadlimit;
+            InService = inservice;
             Type = type;
         }
         // DEFAULT CONSTRUCTOR -------------------------

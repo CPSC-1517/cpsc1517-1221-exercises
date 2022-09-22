@@ -21,9 +21,9 @@ namespace TrainSystem_RioCasanova.Data
             get { return _Model; }
             private set 
             {
-                if (!Utilities.IsEmpty(value))
+                if (Utilities.IsEmpty(value))
                 {
-                    throw new Exception("Model must be declared");
+                    throw new ArgumentNullException("Model must be declared - Model is passed in as a string");
                 }
                 _Model = value; 
             }
@@ -36,7 +36,7 @@ namespace TrainSystem_RioCasanova.Data
             { 
                 if(Utilities.IsEmpty(value)) 
                 { 
-                    throw new Exception("Serial Number must be declared");
+                    throw new ArgumentNullException("Serial Number must be declared - Serial Number is passed in as a string");
                 } 
                 _SerialNumber = value; 
             }
@@ -76,10 +76,10 @@ namespace TrainSystem_RioCasanova.Data
 
         public Engine(string model, string serialnumber, int weight, int horsepower)
         {
-            _Model = model;
-            _SerialNumber = serialnumber;
-            _Weight = weight;
-            _Horsepower = horsepower;
+            Model = model;
+            SerialNumber = serialnumber;
+            Weight = weight;
+            Horsepower = horsepower;
         }
 
         public Engine()

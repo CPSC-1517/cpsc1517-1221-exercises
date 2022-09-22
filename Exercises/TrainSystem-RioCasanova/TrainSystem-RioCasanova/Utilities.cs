@@ -107,5 +107,23 @@ namespace TrainSystem_RioCasanova.Data
             int weightInPounds = horsepower * 2000;
             return weightInPounds;
         }
+
+        public static bool IsEmptyList(List<RailCar> cars)
+        {
+            if (cars == null)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static void AddEngine(List<Engine> engines, Engine engine)
+        {
+            engines.Add(engine);
+        }
+        public static void RemoveEngine(List<Engine> engines, Engine engine)
+        {
+            engines.Remove(engine);
+        }
     }
 }
