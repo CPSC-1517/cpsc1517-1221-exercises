@@ -9,14 +9,14 @@ namespace TrainSystem_RioCasanova.Data
 {
     public class Train
     {
-        // FIELDS
+        // FIELDS ------------------------------------------------
         private int _GrossWeight;
         private int _MaxGrossWeight;
         private int _TotalCars;
         List<RailCar> cars = new List<RailCar>();
 
 
-        // PROPERTIES
+        // PROPERTIES --------------------------------------------
         public Engine Engine { get; private set; }
         public List<RailCar> RailCars
         {
@@ -33,7 +33,7 @@ namespace TrainSystem_RioCasanova.Data
             }
         }
 
-        // CALCULATED PROPERTIES
+        // CALCULATED PROPERTIES ---------------------------------
         public int TotalCars
         {
             get 
@@ -48,7 +48,7 @@ namespace TrainSystem_RioCasanova.Data
             get 
             {
                 int totalCarWeight = Utilities.TotalCarWeight(RailCars);
-                int theWeight = totalCarWeight;
+                int theWeight = Engine.Weight + totalCarWeight;
                 _GrossWeight =+ theWeight;
                 return _GrossWeight; 
             }
@@ -64,7 +64,7 @@ namespace TrainSystem_RioCasanova.Data
         }
 
 
-        // CONSTRUCTORS
+        // CONSTRUCTORS ------------------------------------------
         public Train(Engine engine)
         {
             Engine = engine;
@@ -74,7 +74,7 @@ namespace TrainSystem_RioCasanova.Data
 
         }
 
-        // METHODS
+        // METHODS -----------------------------------------------
         public void AddRailCar(RailCar car)
         {
 
@@ -82,7 +82,7 @@ namespace TrainSystem_RioCasanova.Data
             if (GrossWeight > MaxGrossWeight)
             {
                 RailCars.Remove(car);
-                throw new Exception("Could not add new car - The Gross Weight exceeds the maximum gross weight limit");
+                throw new ArgumentException("Could not add new car - The Gross Weight exceeds the maximum gross weight limit");
             }
         }
         public override string ToString()

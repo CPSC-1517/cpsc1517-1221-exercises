@@ -10,7 +10,7 @@ namespace TrainSystem_RioCasanova
     public class RailCar
     {
 
-        // FIELDS -------------------------------------
+        // FIELDS --------------------------------------------------------------------
         private string _SerialNumber;
         private int _LightWeight;
         private int _Capacity;
@@ -21,7 +21,7 @@ namespace TrainSystem_RioCasanova
         private int _NetWeight;
 
         
-        // PROPERTIES ---------------------------------
+        // PROPERTIES -----------------------------------------------------------------
         public RailCarType Type { get; set; }
 
         public string SerialNumber
@@ -72,11 +72,11 @@ namespace TrainSystem_RioCasanova
             {
                 if (!Utilities.IsPositive(value))
                 {
-                    throw new Exception("LoadLimit must be a positive Integer");
+                    throw new ArgumentOutOfRangeException("LoadLimit must be a positive Integer");
                 }
                 if (!Utilities.AcceptableLoadLimit(value, Capacity))
                 {
-                    throw new Exception("Load Limit must be more than Capacity");
+                    throw new ArgumentOutOfRangeException("Load Limit must be more than Capacity");
                 }
                 _LoadLimit = value; 
             }
@@ -87,45 +87,24 @@ namespace TrainSystem_RioCasanova
         public int GrossWeight
         {
             get 
-            {
-                var value = 164500; 
-                if (!Utilities.IsPositive(value))
-                {
-                    throw new Exception("GrossWeight must be a positive Integer");
-                }
-                int exceptionType = Utilities.AcceptableGrossWeight(value, LoadLimit, LightWeight);
-                if (exceptionType == 1)
-                {
-                    throw new Exception("Unsafe Load - The Gross Load Limit has exceeded the legal weight limit for this car. " +
-                    "Please contact your supervisor. \"For safety, a rail car should be loaded so that Gross Weight" +
-                    " is less than the sum of its stenciled Load Limit + Light Weight.\"");
-                }
-                if (exceptionType == 2)
-                {
-                    throw new Exception("Scale Error - The Gross Weight supplied is less than the Light Weight supplied");
-                }
-                RecordScaleWeight(value);
-                _GrossWeight = value;
-                return _GrossWeight; 
-            }
+            { return _GrossWeight; }
             private set
             {
                 if (!Utilities.IsPositive(value))
                 {
-                    throw new Exception("GrossWeight must be a positive Integer");
+                    throw new ArgumentOutOfRangeException("GrossWeight must be a positive Integer");
                 }
                 int exceptionType = Utilities.AcceptableGrossWeight(value, LoadLimit, LightWeight);
                 if (exceptionType == 1)
                 {
-                    throw new Exception("Unsafe Load - The Gross Load Limit has exceeded the legal weight limit for this car. " +
+                    throw new ArgumentException("Unsafe Load - The Gross Load Limit has exceeded the legal weight limit for this car. " +
                     "Please contact your supervisor. \"For safety, a rail car should be loaded so that Gross Weight" +
                     " is less than the sum of its stenciled Load Limit + Light Weight.\"");
                 }
                 if (exceptionType == 2)
                 {
-                    throw new Exception("Scale Error - The Gross Weight supplied is less than the Light Weight supplied");
+                    throw new ArgumentException("Scale Error - The Gross Weight supplied is less than the Light Weight supplied");
                 }
-                RecordScaleWeight(value);
                 _GrossWeight = value;
             }
         }
@@ -143,7 +122,7 @@ namespace TrainSystem_RioCasanova
             }
         }
 
-        // CALCULATED VALUES ----------------------------
+        // CALCULATED VALUES ----------------------------------------------------------
         public int NetWeight
         {
             get 
@@ -157,13 +136,17 @@ namespace TrainSystem_RioCasanova
         {
             get 
             {
-                bool valid = Utilities.FullLoadYN(GrossWeight, LoadLimit, NetWeight);
-                _IsFull = valid;
-                return _IsFull; 
+                if (Utilities.FullLoadYN(Capacity, GrossWeight))
+                {
+                    bool _IsFull = false;
+                    return _IsFull;
+                }
+                _IsFull = true;
+                return _IsFull;
             } 
         }
 
-        // GREEDY CONSTRUCTOR -------------------------
+        // GREEDY CONSTRUCTOR ----------------------------------------------------------
         public RailCar(string serialnumber, int lightweight, int capacity, 
                         int loadlimit, bool inservice, RailCarType type)
         {
@@ -174,22 +157,21 @@ namespace TrainSystem_RioCasanova
             InService = inservice;
             Type = type;
         }
-        // DEFAULT CONSTRUCTOR -------------------------
+        // DEFAULT CONSTRUCTOR ---------------------------------------------------------
         public RailCar()
         {
 
         }
-        // ToString() OVERRIDE --------------------------
+        // ToString() OVERRIDE ---------------------------------------------------------
         public override string ToString()
         {
-            return $"{SerialNumber}, {LightWeight}, {Capacity}, {LoadLimit}, {Type}," +
+            return $"{SerialNumber}, {LightWeight}, {Capacity}, {LoadLimit}, {Type}, " +
                 $"{GrossWeight}, {InService}, {NetWeight}, {IsFull}";
         }
 
-        // NOT SURE WHAT TO DO HERE
-        public static void RecordScaleWeight(int grossweight)
+        public void RecordScaleWeight(int grossweight)
         {
-            int grossWeightOfRailCar =+ grossweight;
+            GrossWeight = grossweight;
         }
 
     } // end of class

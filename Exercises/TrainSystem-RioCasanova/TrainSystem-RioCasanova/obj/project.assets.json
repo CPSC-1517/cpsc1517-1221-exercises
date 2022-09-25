@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\rcasanova2\\.nuget\\packages\\": {},
+    "C:\\Users\\rioca\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DMIT\\Fall 2022\\DMIT1517 App Dev\\code.cs\\cpsc1517-1221-exercises\\Exercises\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova.csproj",
+      "projectUniqueName": "F:\\DMIT\\Fall 2022\\DMIT1517 App Dev\\code.cs\\Assignment 1\\cpsc1517-1221-exercises\\Exercises\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova.csproj",
       "projectName": "TrainSystem-RioCasanova",
-      "projectPath": "E:\\DMIT\\Fall 2022\\DMIT1517 App Dev\\code.cs\\cpsc1517-1221-exercises\\Exercises\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova.csproj",
-      "packagesPath": "C:\\Users\\rcasanova2\\.nuget\\packages\\",
-      "outputPath": "E:\\DMIT\\Fall 2022\\DMIT1517 App Dev\\code.cs\\cpsc1517-1221-exercises\\Exercises\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova\\obj\\",
+      "projectPath": "F:\\DMIT\\Fall 2022\\DMIT1517 App Dev\\code.cs\\Assignment 1\\cpsc1517-1221-exercises\\Exercises\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova.csproj",
+      "packagesPath": "C:\\Users\\rioca\\.nuget\\packages\\",
+      "outputPath": "F:\\DMIT\\Fall 2022\\DMIT1517 App Dev\\code.cs\\Assignment 1\\cpsc1517-1221-exercises\\Exercises\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\rcasanova2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rioca\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

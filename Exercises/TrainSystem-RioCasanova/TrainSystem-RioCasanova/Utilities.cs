@@ -9,6 +9,7 @@ namespace TrainSystem_RioCasanova.Data
 {
     public static class Utilities
     {
+        // THIS PAGE IS EXCLUSIVELY FOR METHODS JUST TO CLEAN UP MY OTHER PAGES
 
         public static bool IsEmpty(string value)
         {
@@ -49,6 +50,7 @@ namespace TrainSystem_RioCasanova.Data
             if (value >= 3500 && value <= 5500)
             {
                 valid = true;
+                return valid;
             }
             return valid;
         }
@@ -80,15 +82,14 @@ namespace TrainSystem_RioCasanova.Data
             return 0;
         }
 
-        public static bool FullLoadYN(int capacity, int grossweight, int netweight)
+        public static bool FullLoadYN(int capacity, int grossweight)
         {
-           double percentGross = 100 * (capacity / grossweight);
-            double percentNet = 100 * (capacity / netweight);
-            if (percentGross >= 90 || percentNet >= 90)
+            double capacityPercent = capacity * 0.90;
+            if (capacityPercent >= grossweight)
             {
-                return true;
+                return false;
             }
-            return false;
+            return true;
         }
 
         public static int TotalCarWeight(List<RailCar> railcars)
@@ -125,5 +126,23 @@ namespace TrainSystem_RioCasanova.Data
         {
             engines.Remove(engine);
         }
+
+        public static bool CorrectIncrementedWeight(int weight)
+        {
+            if (weight % 100 == 0)
+            {
+                return false;
+            }
+            return true;
+        }
+        public static bool CorrectIncrementedHorsepower(int horsepower)
+        {
+            if (horsepower % 100 == 0)
+            {
+                return false;
+            }
+            return true;
+        }
+
     }
 }
