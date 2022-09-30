@@ -58,106 +58,223 @@ Train CreateTrain(Engine engine)
 
 // TEST CASES FOR ENGINE
 // valid data ************************************************************************************
-//Engine Engine1 = CreateEngine("CP 8002", "48807", 147700, 4400);
-//Utilities.AddEngine(Engines, Engine1);
-//Console.WriteLine(Engine1.ToString());
-//Utilities.RemoveEngine(Engines, Engine1);
-
+try
+{
+    //Engine Engine1 = CreateEngine("CP 8002", "48807", 147700, 4400);
+    //Utilities.AddEngine(Engines, Engine1);
+    //Console.WriteLine(Engine1.ToString());
+    //Utilities.RemoveEngine(Engines, Engine1);
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
 
 // Model is null **********************************************************************************
-//Engine Engine2 = CreateEngine( null, "48807", 147700, 4400);
-//Utilities.AddEngine(Engines, Engine2);
-//Console.WriteLine(Engine2.ToString());
-//Utilities.RemoveEngine(Engines, Engine2);
+try
+{
+    //Engine Engine2 = CreateEngine(null, "48807", 147700, 4400);
+    //Utilities.AddEngine(Engines, Engine2);
+    //Console.WriteLine(Engine2.ToString());
+    //Utilities.RemoveEngine(Engines, Engine2);
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
+
 
 // SerialNumber is null ***************************************************************************
-//Engine Engine3 = CreateEngine("CP 8002", null, 147700, 4400);
-//Utilities.AddEngine(Engines, Engine3);
-//Console.WriteLine(Engine3.ToString());
-//Utilities.RemoveEngine(Engines, Engine3);
+try
+{
+    //Engine Engine3 = CreateEngine("CP 8002", null, 147700, 4400);
+    //Utilities.AddEngine(Engines, Engine3);
+    //Console.WriteLine(Engine3.ToString());
+    //Utilities.RemoveEngine(Engines, Engine3);
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
 
 // Weight is negative *****************************************************************************
-//Engine Engine1 = CreateEngine("CP 8002", "48807", -147700, 4400);
-//Utilities.AddEngine(Engines, Engine1);
-//Console.WriteLine(Engine1.ToString());
-//Utilities.RemoveEngine(Engines, Engine1);
+try
+{
+    //Engine Engine1 = CreateEngine("CP 8002", "48807", -147700, 4400);
+    //Utilities.AddEngine(Engines, Engine1);
+    //Console.WriteLine(Engine1.ToString());
+    //Utilities.RemoveEngine(Engines, Engine1);
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
 
 // Weight is not in increments of 100 *************************************************************
-//Engine Engine1 = CreateEngine("CP 8002", "48807", 147770, 4400);
-//Utilities.AddEngine(Engines, Engine1);
-//Console.WriteLine(Engine1.ToString());
-//Utilities.RemoveEngine(Engines, Engine1);
+try
+{
+    //Engine Engine1 = CreateEngine("CP 8002", "48807", 147770, 4400);
+    //Utilities.AddEngine(Engines, Engine1);
+    //Console.WriteLine(Engine1.ToString());
+    //Utilities.RemoveEngine(Engines, Engine1);
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
 
 // HP is negative *********************************************************************************
-//Engine Engine1 = CreateEngine("CP 8002", "48807", 147700, -4400);
-//Utilities.AddEngine(Engines, Engine1);
-//Console.WriteLine(Engine1.ToString());
-//Utilities.RemoveEngine(Engines, Engine1);
+try
+{
+    //Engine Engine1 = CreateEngine("CP 8002", "48807", 147700, -4400);
+    //Utilities.AddEngine(Engines, Engine1);
+    //Console.WriteLine(Engine1.ToString());
+    //Utilities.RemoveEngine(Engines, Engine1);
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
 
 // HP is not in increments of 100 ******************************************************************
-//Engine Engine1 = CreateEngine("CP 8002", "48807", 147700, 4440);
-//Utilities.AddEngine(Engines, Engine1);
-//Console.WriteLine(Engine1.ToString());
-//Utilities.RemoveEngine(Engines, Engine1);
-
-
-
+try
+{
+    //Engine Engine1 = CreateEngine("CP 8002", "48807", 147700, 4440);
+    //Utilities.AddEngine(Engines, Engine1);
+    //Console.WriteLine(Engine1.ToString());
+    //Utilities.RemoveEngine(Engines, Engine1);
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
 
 // TEST CASES FOR RAILCAR
 // RecordScaleWeight Full **************************************************************************
-//RailCar Car1 = CreateRailCar("18172", 38800, 130000, 130200, true, RailCarType.COAL_CAR);
-//Car1.RecordScaleWeight(164900);
-//Console.WriteLine(Car1.ToString());
+try
+{
+    //RailCar Car1 = CreateRailCar("18172", 38800, 130000, 130200, true, RailCarType.COAL_CAR);
+    //Car1.RecordScaleWeight(164900);
+    //Console.WriteLine(Car1.ToString());
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
 
 // RecordScaleWeight Not Full **********************************************************************
-//RailCar Car1 = CreateRailCar("18172", 38800, 130000, 130200, true, RailCarType.COAL_CAR);
-//Car1.RecordScaleWeight(144900);
-//Console.WriteLine(Car1.ToString());
+try
+{
+    //RailCar Car1 = CreateRailCar("18172", 38800, 130000, 130200, true, RailCarType.COAL_CAR);
+    //Car1.RecordScaleWeight(144900);
+    //Console.WriteLine(Car1.ToString());
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
 
 // Scale Error *************************************************************************************
-//RailCar Car1 = CreateRailCar("18172", 38800, 130000, 130200, true, RailCarType.COAL_CAR);
-//Car1.RecordScaleWeight(194490);
-//Console.WriteLine(Car1.ToString());
+try
+{
+    //RailCar Car1 = CreateRailCar("18172", 38800, 130000, 130200, true, RailCarType.COAL_CAR);
+    //Car1.RecordScaleWeight(194490);
+    //Console.WriteLine(Car1.ToString());
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
+
 
 // UnsafeLoad Error ********************************************************************************
-//RailCar Car1 = CreateRailCar("18172", 38800, 130000, 130200, true, RailCarType.COAL_CAR);
-//Car1.RecordScaleWeight(194490);
-//Console.WriteLine(Car1.ToString());
+try
+{
+    //RailCar Car1 = CreateRailCar("18172", 38800, 130000, 130200, true, RailCarType.COAL_CAR);
+    //Car1.RecordScaleWeight(194490);
+    //Console.WriteLine(Car1.ToString());
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
 
 // Invalid SerialNumber ****************************************************************************
-//RailCar Car1 = CreateRailCar(null, 38800, 130000, 130200, true, RailCarType.COAL_CAR);
-//Car1.RecordScaleWeight(164900);
-//Console.WriteLine(Car1.ToString());
+try
+{
+    //RailCar Car1 = CreateRailCar(null, 38800, 130000, 130200, true, RailCarType.COAL_CAR);
+    //Car1.RecordScaleWeight(164900);
+    //Console.WriteLine(Car1.ToString());
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
 
 // Invalid LightWeight *****************************************************************************
-//RailCar Car1 = CreateRailCar("18172", -38800, 130000, 130200, true, RailCarType.COAL_CAR);
-//Car1.RecordScaleWeight(164900);
-//Console.WriteLine(Car1.ToString());
+try
+{
+    //RailCar Car1 = CreateRailCar("18172", -38800, 130000, 130200, true, RailCarType.COAL_CAR);
+    //Car1.RecordScaleWeight(164900);
+    //Console.WriteLine(Car1.ToString());
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
 
 // Invalid Capacity ********************************************************************************
-//RailCar Car1 = CreateRailCar("18172", 38800, -130000, 130200, true, RailCarType.COAL_CAR);
-//Car1.RecordScaleWeight(164900);
-//Console.WriteLine(Car1.ToString());
+try
+{
+    //RailCar Car1 = CreateRailCar("18172", 38800, -130000, 130200, true, RailCarType.COAL_CAR);
+    //Car1.RecordScaleWeight(164900);
+    //Console.WriteLine(Car1.ToString());
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
 
 // Invalid LoadLimit *******************************************************************************
-//RailCar Car1 = CreateRailCar("18172", 38800, 130000, -130200, true, RailCarType.COAL_CAR);
-//RailCar Car1 = CreateRailCar("18172", 38800, 130000, 120200, true, RailCarType.COAL_CAR);
-//Car1.RecordScaleWeight(164900);
-//Console.WriteLine(Car1.ToString());
-
+try
+{
+    //RailCar Car1 = CreateRailCar("18172", 38800, 130000, -130200, true, RailCarType.COAL_CAR);
+    //RailCar Car1 = CreateRailCar("18172", 38800, 130000, 120200, true, RailCarType.COAL_CAR);
+    //Car1.RecordScaleWeight(164900);
+    //Console.WriteLine(Car1.ToString());
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
 
 // TEST CASES FOR TRAIN
 // GoodWeight **************************************************************************************
-//Train Train1 = CreateTrain(Engine1);
-//RailCar Car1 = CreateRailCar("18172", 38800, 130000, 130200, true, RailCarType.COAL_CAR, 164500);
-//Train1.AddRailCar(Car1);
-//Console.WriteLine(Train1.ToString());
+try
+{
+    //Train Train1 = CreateTrain(Engine1);
+    //RailCar Car1 = CreateRailCar("18172", 38800, 130000, 130200, true, RailCarType.COAL_CAR, 164500);
+    //Train1.AddRailCar(Car1);
+    //Console.WriteLine(Train1.ToString());
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
+
 
 // Over Gross Weight *******************************************************************************
-//  YOU MUST COMMENT OUT THE HORSEPOWER EXCEPTION FOR VALUES BETWEEN 3500 AND 5500 FOR TEST TO WORK
-//Engine Engine1 = CreateEngine("CP 8002", "48807", 200, 200);
-//Train Train1 = CreateTrain(Engine1);
-//RailCar Car1 = CreateRailCar("18172", 75000, 130000, 400000, true, RailCarType.COAL_CAR);
-//Car1.RecordScaleWeight(450000);
-//Train1.AddRailCar(Car1);
-//Console.WriteLine(Train1.ToString());
+try
+{
+    //  YOU MUST COMMENT OUT THE HORSEPOWER EXCEPTION FOR VALUES BETWEEN 3500 AND 5500 FOR TEST TO WORK
+    //Engine Engine1 = CreateEngine("CP 8002", "48807", 200, 200);
+    //Train Train1 = CreateTrain(Engine1);
+    //RailCar Car1 = CreateRailCar("18172", 75000, 130000, 400000, true, RailCarType.COAL_CAR);
+    //Car1.RecordScaleWeight(450000);
+    //Train1.AddRailCar(Car1);
+    //Console.WriteLine(Train1.ToString());
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
