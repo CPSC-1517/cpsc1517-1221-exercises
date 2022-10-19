@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\DMIT\\Fall 2022\\DMIT1517 App Dev\\code.cs\\Assignment 1\\cpsc1517-1221-exercises\\Exercises\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova.csproj",
+      "projectUniqueName": "F:\\DMIT\\Fall 2022\\DMIT1517 App Dev\\cpsc1517-1221-exercises\\Exercises\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova.csproj",
       "projectName": "TrainSystem-RioCasanova",
-      "projectPath": "F:\\DMIT\\Fall 2022\\DMIT1517 App Dev\\code.cs\\Assignment 1\\cpsc1517-1221-exercises\\Exercises\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova.csproj",
+      "projectPath": "F:\\DMIT\\Fall 2022\\DMIT1517 App Dev\\cpsc1517-1221-exercises\\Exercises\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova.csproj",
       "packagesPath": "C:\\Users\\rioca\\.nuget\\packages\\",
-      "outputPath": "F:\\DMIT\\Fall 2022\\DMIT1517 App Dev\\code.cs\\Assignment 1\\cpsc1517-1221-exercises\\Exercises\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova\\obj\\",
+      "outputPath": "F:\\DMIT\\Fall 2022\\DMIT1517 App Dev\\cpsc1517-1221-exercises\\Exercises\\TrainSystem-RioCasanova\\TrainSystem-RioCasanova\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -66,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

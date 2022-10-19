@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\rcasanova2\\.nuget\\packages\\": {},
+    "C:\\Users\\rioca\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DMIT\\Fall 2022\\DMIT1517 App Dev\\code.cs\\Assignment 1\\cpsc1517-1221-exercises\\TrainWatch-RioCasanova\\TrainWatch-RioCasanova\\TrainWatch-RioCasanova.csproj",
-      "projectName": "TrainWatch-RioCasanova",
-      "projectPath": "D:\\DMIT\\Fall 2022\\DMIT1517 App Dev\\code.cs\\Assignment 1\\cpsc1517-1221-exercises\\TrainWatch-RioCasanova\\TrainWatch-RioCasanova\\TrainWatch-RioCasanova.csproj",
-      "packagesPath": "C:\\Users\\rcasanova2\\.nuget\\packages\\",
-      "outputPath": "D:\\DMIT\\Fall 2022\\DMIT1517 App Dev\\code.cs\\Assignment 1\\cpsc1517-1221-exercises\\TrainWatch-RioCasanova\\TrainWatch-RioCasanova\\obj\\",
+      "projectUniqueName": "F:\\DMIT\\Fall 2022\\DMIT1517 App Dev\\cpsc1517-1221-exercises\\Exercises\\TrainWatch-RioCasanova\\TrainWatch-RioCasanova\\TrainWebbApp.csproj",
+      "projectName": "TrainWebbApp",
+      "projectPath": "F:\\DMIT\\Fall 2022\\DMIT1517 App Dev\\cpsc1517-1221-exercises\\Exercises\\TrainWatch-RioCasanova\\TrainWatch-RioCasanova\\TrainWebbApp.csproj",
+      "packagesPath": "C:\\Users\\rioca\\.nuget\\packages\\",
+      "outputPath": "F:\\DMIT\\Fall 2022\\DMIT1517 App Dev\\cpsc1517-1221-exercises\\Exercises\\TrainWatch-RioCasanova\\TrainWatch-RioCasanova\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\rcasanova2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rioca\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -69,7 +69,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
