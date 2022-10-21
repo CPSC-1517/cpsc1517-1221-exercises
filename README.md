@@ -4,6 +4,8 @@
 
 1. [Exercise 1](./Exercises/Exercise1/ReadMe.md)
 1. [Exercise 2](./Exercises/Exercise2/ReadMe.md)
+1. [Exercise 3](./Exercises/Exercise3/ReadMe.md)
+
 ## Submission of exercises/project
 
 Your source code must be submitted as per your instruction's direction. 
