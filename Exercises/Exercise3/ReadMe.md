@@ -62,8 +62,8 @@ Set up the database connection string in the `appsettings.json` file (web applic
 ```csharp
 "ConnectionStrings": {
     "TrainWatchLocalDB" : "Server=xxxx;Database=TrainWatch;Trusted_Connection=true;TrustServerCertificate=True;MultipleActiveResultSets=true",
-    "TrainWatchRemoteVpnDmitDB" : "Server=DMIT-Capstone1.ad.sast.ca;Database=CPSC1517_1221_yourSection_yourNaitUserName;Trusted_Connection=true;TrustServerCertificate=True;MultipleActiveResultSets=true",
-    "TrainWatchRemoteDmitDB" : "Server=CAPSTONE1.dmit.sast.ca;Database=CPSC1517_1221_yourSection_yourNaitUserName;Trusted_Connection=true;TrustServerCertificate=True;MultipleActiveResultSets=true",
+    "TrainWatchRemoteVpnDmitDB" : "Server=DMIT-Capstone1.ad.sast.ca;Database=CPSC1517_1221_yourSection_yourNaitUserName;User Id=yourNaitUsername;Password=RemotePassword.yourNaitStudentId;TrustServerCertificate=True;MultipleActiveResultSets=true",
+    "TrainWatchRemoteDmitDB" : "Server=CAPSTONE1.dmit.sast.ca;Database=CPSC1517_1221_yourSection_yourNaitUserName;User Id=yourNaitUsername;Password=RemotePassword.yourNaitStudentId;TrustServerCertificate=True;MultipleActiveResultSets=true",
   },
 ```
 ### Setup Extension method in the Application Library
