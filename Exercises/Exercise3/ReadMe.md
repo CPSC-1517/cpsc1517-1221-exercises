@@ -86,6 +86,35 @@ Be sure to add a menu item so that this page can be navigated to using the main 
 
 To ensure that your web application works, build and run your project.
 
+## Evaluation
+
+> ***NOTE:** Your code **must** compile. Solutions that do not compile will receive an automatic mark of zero (0).*
+>
+> If you are unable to get a portion of the assignment to compile, you should:
+>
+> - Comment out the non-compiling portion of code
+> - Identify the non-compiling portion in the **Incomplete Requirements** heading, noting the item's
+>   - File name (e.g.: "Account.cs")
+>   - Line number(s)
+>   - Compiler error number and general message
+
+Your assignment will be marked based upon the following weights. 
+
+| Earned | Weight | Deliverable/Requirement | 
+| ------ | ---- | --------- |
+| 0 | 1 | `DbVersion.cs` Entity class|
+| 0 | 1 | `TrainWatchContext.cs` DAL context class |
+| 0 | 1 | `TrainWatchServices.cs` BLL service class|
+| 0 | 1 | `GetDbVersion()` query |
+| 0 | 2 | Backend static startup extension class/service registering method |
+| 0 | 1 | Appropriate web app `Program.cs` setup for registering services |
+| 0 | 3 | Display of build version data on `About.cshtml` !
+| ------ | ---- | --------- |
+| 0 | **10** | **Total Weight** |
+
+----
+
+
 
 ## Research Notes and Credits
 
