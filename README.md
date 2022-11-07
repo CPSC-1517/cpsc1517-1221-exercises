@@ -6,6 +6,7 @@
 1. [Exercise 2](./Exercises/Exercise2/ReadMe.md)
 1. [Exercise 3](./Exercises/Exercise3/ReadMe.md)
 1. [Exercise 4](./Exercises/Exercise4/ReadMe.md)
+1. [Exercise 5](./Exercises/Exercise5/README.md)
 
 ## Submission of exercises/project
 
